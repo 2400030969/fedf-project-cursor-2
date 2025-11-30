@@ -1,0 +1,127 @@
+.portfolio-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+  flex: 1;
+}
+
+.card-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.progress-section {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-view,
+.btn-edit {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-view {
+  background: #667eea;
+  color: white;
+}
+
+.btn-view:hover {
+  background: #5568d3;
+}
+
+.btn-edit {
+  background: #f5f5f5;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-edit:hover {
+  background: #667eea;
+  color: white;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-idea {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-prototype {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.status-testing {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.status-completed {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
